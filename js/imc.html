@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+
+    <!--Aqui ainda n consegui pra rodar js por fora de alguma outra forma..??..?? enfim...-->
+
+    <!-- -->
+
+    <h1>IMC - INDICE DE MASSA CORPORAL</h1>
+
+    <P>A classificação do índice de massa corporal (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos.
+
+        Além de saber qual é o seu IMC, essa calculadora também indica qual deve ser o seu peso ideal e quantas calorias você deve ingerir para alcançar a sua melhor forma, e assim melhorar sua qualidade de vida, garantindo o seu bem estar.</P>
+        
+        <h2>A fórmula é : 
+            IMC=peso/(altura*altura)</h2>
+
+      <script>
+          //https://www.todoespacoonline.com/w/2014/04/estruturas-condicionais-javascript/
+          //https://developer.mozilla.org/pt-BR/docs/Web/API/Window/prompt
+          //CONSEGUI CARAI! FUNCIONA A BAGAÇA!!! AQUI AINDA ESTA FEIO QUE DÓI. MAS FUNCIONA!
+
+                var peso = window.prompt('Qual é o seu Peso?(Números inteiros somente.)');
+                var altura = window.prompt('Qual é a sua altura?(use ponto ao inves de virgula)');
+                var IMC = peso/(altura*altura);
+                document.write(IMC,' kg/m2');
+                var magreza = 18.5
+                var normal = 24.9
+                var sobrepeso = 30
+                var obesidade = 30
+
+                if (IMC <= 18.5){
+                    alert('Esta magro ou subnutrido. ');
+                }else if (IMC <=24.9){
+                    alert('Esta normal, nao descuide-se!');
+                }else if (IMC <= 30){
+                    alert('Esta acima do peso, talvez esteja na hora de um regime.');
+                }else if (IMC > 30){
+                    alert('Esta Obeso, procure ajuda vc esta muito acima do peso.');
+                     }
+                     
+
+            </script>
+         
+    
+    <h1></h1>
+    <p><h2>Como é calculado?</h2>
+        O IMC é a relação entre peso e altura e o cálculo é feito de acordo com a fórmula: IMC = peso/ (altura x altura), devendo o peso estar em kg e a altura em metro, e o resultado é dado em kg/m2. Depois de obter o resultado, é verificado em que faixa o resultado se encontra, podendo indicar:<hr>
+        
+        <h3>Magreza</h3>Quando o resultado é menor que 18,5 kg/m2;
+        <h3>Normal</h3>Quando o resultado está entre 18,5 e 24,9 kg/m2;
+        <h3>Sobrepeso</h3>Quando o resultado está entre 24,9 e 30 kg/m2;
+        <h3>Obesidade</h3>Quando o resultado é maior que 30 kg/m2.<hr>
+        Assim, de acordo com o resultado do IMC é possível também saber o r isco de desenvolver doenças, isso porque quanto maior é o valor do IMC maior é a quantidade de gordura acumulada no corpo e maior é o risco da pessoa ter pressão alta, diabetes e doenças cardíacas.
+        
+        </p>
+
+
+    
+</body>
+</html>
